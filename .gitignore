@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# my ignore list
+credentials.json
+logpass.py
+bot.db
+admin
+old_version
+rest-api
+skuf
+test
+nttm
+old_versions
