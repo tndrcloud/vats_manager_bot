@@ -102,7 +102,7 @@ class Schedule:
         credentials = service_account.Credentials.from_service_account_file(
             SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
-        SAMPLE_SPREADSHEET_ID = '1BEQN1R-qZ7-co0OSczx5R3Bqwto4izpK5Vj5XbS06nE'  # ID таблицы
+        SAMPLE_SPREADSHEET_ID = False  # ID таблицы
         service = build('sheets', 'v4', credentials=credentials).spreadsheets()
 
         info_table = service.get(spreadsheetId=SAMPLE_SPREADSHEET_ID).execute()
@@ -168,7 +168,7 @@ class Schedule:
                   'https://www.googleapis.com/auth/spreadsheets',  # чтение и запись в Google Sheets
                   'https://www.googleapis.com/auth/drive']  # применение Google Drive
 
-        SAMPLE_SPREADSHEET_ID = '1mgbRGu8rRL6LUNHTibcL7XoJtZlCrUj9ShwN-WOEjX8'  # ID таблицы
+        SAMPLE_SPREADSHEET_ID = False  # ID таблицы
 
         TRANSLATOR_MONTH_EN = {'January': 'Январь', 'February': 'Февраль', 'March': 'Март', 'April': 'Апрель',
                                'May': 'Май', 'June': 'Июнь', 'July': 'Июль', 'August': 'Август', 'September':
